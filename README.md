@@ -6,7 +6,7 @@ This repository is mainly to test the idea of using YML file for the actual task
 
 No error handling or extra stuff has been implemented so far
 
-#### Link to the [final output PDF](output.pdf)
+### Link to the [final output PDF](output.pdf)
 
 ## Requirements
 
