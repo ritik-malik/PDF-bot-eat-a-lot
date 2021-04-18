@@ -10,8 +10,8 @@ No error handling or extra stuff has been implemented so far
 
 ## Requirements
 
-LaTeX : `sudo apt-get install texlive-full` [Debian-based]
-pyyaml : `pip3 install pyyaml`
+* LaTeX : `sudo apt-get install texlive-full` [Debian-based]
+* pyyaml : `pip3 install pyyaml`
 
 ## Working
 
