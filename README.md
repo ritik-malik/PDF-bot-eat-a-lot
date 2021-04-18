@@ -20,7 +20,7 @@ No error handling or extra stuff has been implemented so far
 
 ## Usage
 
-* `python3 PDF-bot.py repo-structure.py`
+* `python3 PDF-bot.py repo-structure.yml`
 
 
 
