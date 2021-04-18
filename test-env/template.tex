@@ -1,0 +1,53 @@
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{sectsty, fancyhdr}
+\usepackage{enumitem}
+\usepackage{amsfonts}
+\usepackage{hyperref}
+\usepackage{fancyvrb,newverbs,xcolor}
+
+\usepackage[margin=0.8in,a4paper]{geometry}
+
+\definecolor{sec}{RGB}{1, 57, 89}
+\definecolor{subsec}{RGB}{0,73,114}
+\definecolor{subsubsec}{RGB}{14,91,135}
+
+
+% \sectionfont{\underline\Huge\bfseries\clearpage}
+% remove underline
+\sectionfont{\color{sec}\Huge\bfseries\clearpage}
+\subsectionfont{\color{subsec}\LARGE}
+\subsubsectionfont{\color{subsubsec}\large}
+
+\definecolor{Light}{HTML}{F4F4F4}
+
+\let\oldtexttt\texttt
+\renewcommand{\texttt}[1]{
+  \colorbox{Light}{\oldtexttt{#1}}
+}
+
+
+% Set bullets
+\setlist[itemize,1]{label=$\bullet$}
+\setlist[itemize,2]{label=$\bullet$}
+\setlist[itemize,3]{label=$\circ$}
+\setlist[itemize,4]{label=$\circ$}
+
+
+
+\hypersetup{
+  pdftitle={CHOASS Metric Release},
+  pdfauthor={Ritik Malik},
+  pdfsubject={Metric Release 2021-03},
+  pdfkeywords={CHAOSS,metrics}
+}
+
+\pagestyle{fancy}
+
+% to remove UPPERCASE from header
+\makeatletter
+\renewcommand{\sectionmark}[1]{%
+  \markboth{\ifnum \c@secnumdepth>\z@
+      \thesection\hskip 1em\relax
+    \fi #1}{}}
+\makeatother
