@@ -1,6 +1,6 @@
-# PDF-bot-eat-a-lot
+# py-PDF-bot
 
-A py bot that eats a lot of markdown files to auto-generate the corresponding LaTeX PDF using pandoc
+A py bot that uses markdown files to auto-generate the corresponding LaTeX PDF using pandoc
 
 This repository is mainly to test the idea of using YML file for the actual task using a very bare minimun setup
 
