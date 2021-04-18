@@ -53,9 +53,9 @@ def generate_paths(values, paths):
 
 ###### main()
 
-print("\n------------------------------------------------")
-print("<===WELCOME FROM THE PDF BOT THAT EATS A LOT===>")
-print("------------------------------------------------\n")
+print("\n------------------------------")
+print("<===WELCOME TO PY PDF BOT ===>")
+print("------------------------------\n")
 
 # read YML config file
 try:
