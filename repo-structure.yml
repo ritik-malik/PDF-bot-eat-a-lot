@@ -47,7 +47,7 @@ wg-common:
 wg-value:
   include-wg-flag: True
   wg-name: wg-value
-  github-link: https://github.com/chaoss/wg-value
+  github-link: https://github.com/ritik-malik/wg-value
   github-branch: master
   focus-areas:
     communal-value:
