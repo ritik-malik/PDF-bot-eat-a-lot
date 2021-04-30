@@ -64,3 +64,12 @@ wg-value:
 
 # WG-RISK and so on...
 
+focus-areas:
+  metrics-common.md: https://raw.githubusercontent.com/chaoss/website/master/release/metrics-tables/metrics-common.md
+  metrics-value.md: https://raw.githubusercontent.com/chaoss/website/master/release/metrics-tables/metrics-value.md
+
+  #metrics-di.md: https://raw.githubusercontent.com/chaoss/website/master/release/metrics-tables/metrics-di.md
+  #metrics-evo.md: https://raw.githubusercontent.com/chaoss/website/master/release/metrics-tables/metrics-evo.md
+  #metrics-risk.md: https://raw.githubusercontent.com/chaoss/website/master/release/metrics-tables/metrics-risk.md
+
+
