@@ -14,7 +14,6 @@ from pprint import pprint
 def generate_PDF(paths):
 
     print("\nGenerating the PDF now...\n")
-    os.system('cp ../side-scripts/* .')
     
     cmd = ('pandoc -f gfm'
             ' -H template.tex'
@@ -26,7 +25,9 @@ def generate_PDF(paths):
             ' -V fontsize=12pt'
             ' --include-before-body cover.tex'
             ' --highlight-style pygments.theme'
-            ' --toc -s ') + ' '.join(paths)
+            ' --toc'
+            ' --toc-depth 3'
+            ' -V toc-title="Table of Contents" -s ') + ' '.join(paths)
 
     # print(cmd)
     os.system(cmd)
@@ -47,7 +48,13 @@ def generate_paths(values, paths):
             os.system(cmd)
 
             if metrics is not None:
-                gen_md_file(focus, 2)
+                paths.append(focus+'.md')
+
+            # if metrics is not None:
+            #     text = get_fa_table(values['wg-name'] + '/focus-areas/' + focus + '/README.md')
+            #     print(text, type(text))
+
+            #     gen_md_file(focus, 2, text)
 
             for metric in metrics:
                 # gen_md_file(metric, 3)    # no need for metrics heading
@@ -58,19 +65,19 @@ def generate_paths(values, paths):
     # return paths
 
 
-def gen_md_file(name, level):
+def gen_md_file(name, level, text):
 
     # if name[len(name)-3:] != '.md':
     #     name += '.md'
 
-    text = '#'*level + ' ' + name.upper()
+    stuff = '#'*level + ' ' + name.upper() + '\n\n' + text
     name += '.md'
 
-    print("Generating file '{}' with text '{}'".format(name, text))
+    print("Generating file '{}' with text '{}'".format(name, stuff))
 
 
     with open(name, 'w') as f:
-        f.write(text)
+        f.write(stuff)
 
     paths.append(name)
 
@@ -84,6 +91,18 @@ def decrease_level(paths):
             cmd = 'sed -i "s/^\#/###/g" ' + i
             os.system(cmd)
 
+
+def get_fa_table(file_path):
+    
+    cmd = "sed 's/[][]\|([^()]*)//g' " + file_path
+    return subprocess.check_output(cmd, shell=True).decode("utf-8")
+
+
+def get_lorem_ipsum():
+    return '''Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'''
 
 
 ###### main()
@@ -105,12 +124,27 @@ pprint(data)
 
 print("\nMoving to test-env dir...")
 print("Removing files and folders [if any]...")
+print("Bringing side scripts...")
 
 os.chdir('test-env')
 os.system('rm -rf *')
 os.mkdir('images')
+os.system('cp ../side-scripts/* .')
 
 paths = []
+
+# Download and generate focus-areas markdowns
+for key, values in data['focus-areas'].items():
+    
+    print('Downloading', key)
+    cmd = 'wget ' + values
+    os.system(cmd)
+
+    subprocess.check_call(['./get_focus_areas.sh', key])
+
+# delete this from the dict
+del data['focus-areas']
+
 
 for key, values in data.items():
 
@@ -119,7 +153,7 @@ for key, values in data.items():
         print("\nCloning '{}' from '{}' branch\n".format(key, values['github-branch']))
         subprocess.check_call(['git', 'clone', '-b', values['github-branch'], values['github-link'], key])
 
-        gen_md_file(values['wg-name'], 1)
+        gen_md_file(values['wg-name'], 1, get_lorem_ipsum())
 
         # paths =
         generate_paths(values, paths)
