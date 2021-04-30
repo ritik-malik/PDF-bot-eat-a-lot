@@ -1,0 +1,118 @@
+633
+1405
+758
+0
+904
+721
+542
+0
+
+------------------------------
+<===WELCOME TO PY PDF BOT ===>
+------------------------------
+
+YML file structure: 
+
+{'focus-areas': {'metrics-common.md': 'https://raw.githubusercontent.com/chaoss/website/master/release/metrics-tables/metrics-common.md',
+                 'metrics-value.md': 'https://raw.githubusercontent.com/chaoss/website/master/release/metrics-tables/metrics-value.md'},
+ 'wg-common': {'focus-areas': {'what': ['technical-fork.md',
+                                        'types-of-contributions.md'],
+                               'when': ['activity-dates-and-times.md',
+                                        'burstiness.md',
+                                        'review-cycle-duration-with-in-a-change-request.md',
+                                        'time-to-close.md',
+                                        'time-to-first-response.md'],
+                               'where': None,
+                               'who': ['contributor-location.md',
+                                       'contributors.md',
+                                       'organizational-diversity.md']},
+               'github-branch': 'abs-to-rel',
+               'github-link': 'https://github.com/ritik-malik/wg-common',
+               'include-wg-flag': True,
+               'wg-name': 'wg-common'},
+ 'wg-value': {'focus-areas': {'communal-value': ['project-popularity.md',
+                                                 'project-velocity.md',
+                                                 'social-listening.md'],
+                              'individual-value': ['job-opportunities.md',
+                                                   'organizational-project-skill-demand.md'],
+                              'organizational-value': ['labor-investment.md'],
+                              'social-value': None},
+              'github-branch': 'master',
+              'github-link': 'https://github.com/ritik-malik/wg-value',
+              'include-wg-flag': True,
+              'wg-name': 'wg-value'}}
+
+Moving to test-env dir...
+Removing files and folders [if any]...
+Bringing side scripts...
+Downloading metrics-common.md
+Downloading metrics-value.md
+
+Cloning 'wg-common' from 'abs-to-rel' branch
+
+Generating file 'wg-common.md' with text '# WG-COMMON
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+
+Generating relative paths...
+
+['wg-common.md',
+ 'what.md',
+ 'wg-common/focus-areas/what/technical-fork.md',
+ 'wg-common/focus-areas/what/types-of-contributions.md',
+ 'when.md',
+ 'wg-common/focus-areas/when/activity-dates-and-times.md',
+ 'wg-common/focus-areas/when/burstiness.md',
+ 'wg-common/focus-areas/when/review-cycle-duration-with-in-a-change-request.md',
+ 'wg-common/focus-areas/when/time-to-close.md',
+ 'wg-common/focus-areas/when/time-to-first-response.md',
+ 'who.md',
+ 'wg-common/focus-areas/who/contributor-location.md',
+ 'wg-common/focus-areas/who/contributors.md',
+ 'wg-common/focus-areas/who/organizational-diversity.md']
+
+Cloning 'wg-value' from 'master' branch
+
+Generating file 'wg-value.md' with text '# WG-VALUE
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+
+Generating relative paths...
+
+['wg-common.md',
+ 'what.md',
+ 'wg-common/focus-areas/what/technical-fork.md',
+ 'wg-common/focus-areas/what/types-of-contributions.md',
+ 'when.md',
+ 'wg-common/focus-areas/when/activity-dates-and-times.md',
+ 'wg-common/focus-areas/when/burstiness.md',
+ 'wg-common/focus-areas/when/review-cycle-duration-with-in-a-change-request.md',
+ 'wg-common/focus-areas/when/time-to-close.md',
+ 'wg-common/focus-areas/when/time-to-first-response.md',
+ 'who.md',
+ 'wg-common/focus-areas/who/contributor-location.md',
+ 'wg-common/focus-areas/who/contributors.md',
+ 'wg-common/focus-areas/who/organizational-diversity.md',
+ 'wg-value.md',
+ 'communal-value.md',
+ 'wg-value/focus-areas/communal-value/project-popularity.md',
+ 'wg-value/focus-areas/communal-value/project-velocity.md',
+ 'wg-value/focus-areas/communal-value/social-listening.md',
+ 'individual-value.md',
+ 'wg-value/focus-areas/individual-value/job-opportunities.md',
+ 'wg-value/focus-areas/individual-value/organizational-project-skill-demand.md',
+ 'organizational-value.md',
+ 'wg-value/focus-areas/organizational-value/labor-investment.md']
+
+Decreasing heading levels by 2 in metric markdowns
+
+Generating the PDF now...
+
+Generated the PDF!
+
