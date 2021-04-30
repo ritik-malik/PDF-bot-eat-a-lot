@@ -1,16 +1,19 @@
+Downloading metrics-common.md from chaoss/website repo...
 633
 1405
 758
 0
+Downloading metrics-value.md from chaoss/website repo...
 904
 721
 542
 0
 
-------------------------------
-<===WELCOME TO PY PDF BOT ===>
-------------------------------
+-------------------------------
+<<<< WELCOME TO PY PDF BOT >>>>
+-------------------------------
 
+Loading the YML file...
 YML file structure: 
 
 {'focus-areas': {'metrics-common.md': 'https://raw.githubusercontent.com/chaoss/website/master/release/metrics-tables/metrics-common.md',
@@ -45,19 +48,12 @@ YML file structure:
 Moving to test-env dir...
 Removing files and folders [if any]...
 Bringing side scripts...
-Downloading metrics-common.md
-Downloading metrics-value.md
 
 Cloning 'wg-common' from 'abs-to-rel' branch
 
-Generating file 'wg-common.md' with text '# WG-COMMON
+Generating file wg-common.md
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-
-Generating relative paths...
+Generating relative paths to the metric markdowns...
 
 ['wg-common.md',
  'what.md',
@@ -76,14 +72,9 @@ Generating relative paths...
 
 Cloning 'wg-value' from 'master' branch
 
-Generating file 'wg-value.md' with text '# WG-VALUE
+Generating file wg-value.md
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-
-Generating relative paths...
+Generating relative paths to the metric markdowns...
 
 ['wg-common.md',
  'what.md',
