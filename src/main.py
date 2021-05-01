@@ -1,10 +1,3 @@
-# This is the main py script to generate automated PDF from metrics
-# It takes a YML file as an input (command line arg)
-#
-# THE SCRIPT IS NOT CLEAN RIGHT NOW! (for testing purposes only)
-#
-# Usage: python3 PDF-bot.py conf.yml
-
 import yaml
 import os
 import subprocess
@@ -30,9 +23,8 @@ def generate_PDF(paths):
             ' --toc-depth 3'
             ' -V toc-title="Table of Contents" -s ') + ' '.join(paths)
 
-    # print(cmd)
     os.system(cmd)
-    os.system('cp output.pdf ..')
+    os.system('cp output.pdf ../../output')
 
     print("Generated the PDF!\n")
 
@@ -43,25 +35,20 @@ def generate_paths(values, paths):
 
     for focus, metrics in values['focus-areas'].items():
         
-        # try:
         cmd = 'cp ' + values['wg-name'] + '/focus-areas/' + focus + '/images/* images'
         os.system(cmd)
 
-        # add focus-areas markdown
+        # append focus-areas markdown to path
         if metrics is not None:
             paths.append(focus+'.md')
 
-            # add metrics markdown
+            # append metrics markdown to path
             for metric in metrics:
                 paths.append(values['wg-name'] + '/focus-areas/' + focus + '/' + metric)
-        # except:
-        #     continue
-    
+        
     pprint(paths)
     return paths
 
-
-###### main()
 
 def main():
 
