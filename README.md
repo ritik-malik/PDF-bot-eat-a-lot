@@ -1,4 +1,4 @@
-# py-PDF-bot
+# Prototype Pipeline
 
 A prototype pipeline that uses CHAOSS markdown files to auto-generate the corresponding LaTeX PDF using pandoc
 
@@ -6,7 +6,7 @@ This repository is mainly to test the idea of using YML file for the actual task
 
 No error handling or extra stuff has been implemented so far
 
-### Link to the [final output PDF](output/output.pdf)
+### Link to the [Final Output PDF](output/output.pdf)
 
 ## Requirements
 
