@@ -11,6 +11,8 @@ The following is the explanation of various scripts used :
 * `side-scripts/cover.tex` : A replication of CHAOSS coverpage in LaTeX
 * `side-scripts/pygments.theme` : Theme used in PDF
 
+Note: *Processing is performed in `test-env` directory, so all the files in that directory are temporary and are erased automatically before every use*
+
 ## Walkthrough
 
 * Load the yml conf file
