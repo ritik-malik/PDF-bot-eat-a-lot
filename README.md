@@ -1,10 +1,10 @@
 # Prototype Pipeline
 
-A prototype pipeline that uses CHAOSS markdown files to auto-generate the corresponding LaTeX PDF using pandoc
+A prototype pipeline that uses CHAOSS markdown files to auto-generate the corresponding LaTeX PDF using pandoc.
 
-This repository is mainly to test the idea of using YML file for the actual task using a very bare minimun setup
+This repository is mainly to test the idea of using YML file for the actual task using a very bare minimun setup.
 
-No error handling or extra stuff has been implemented so far
+No error handling or extra stuff has been implemented so far.
 
 ### Link to the [Final Output PDF](output/output.pdf)
 
