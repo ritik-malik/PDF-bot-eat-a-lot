@@ -10,7 +10,10 @@ No error handling or extra stuff has been implemented so far
 
 ## Requirements
 
-* LaTeX : `sudo apt-get install texlive-full` [Debian-based]
+* LaTeX :
+  * Debian-based : `sudo apt-get install texlive-full`
+  * MacOS : [here](https://tug.org/mactex/)
+  * Windows : [here](https://miktex.org/download/#collapse264)
 * pyyaml : `pip3 install pyyaml`
 
 ## Working setup
