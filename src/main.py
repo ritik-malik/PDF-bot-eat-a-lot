@@ -1,6 +1,4 @@
-import yaml
-import os
-import subprocess
+import yaml, os, subprocess
 from sys import argv, exit
 from pprint import pprint
 import helper
