@@ -19,8 +19,7 @@ No error handling or extra stuff has been implemented so far.
 ## Working setup
 
 1. Clone the repository
-2. Change to src repository \
-`cd src`
+2. Change to src repository : `cd src`
 3. Confirm the configuation in `repo-structure.yml`
 4. Run the main script \
 `python3 main.py repo-structure.yml`
