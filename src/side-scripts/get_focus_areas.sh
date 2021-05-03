@@ -23,6 +23,18 @@ find . -size 0 -delete
 for f in outfile* 
 do
 	sed -i 's/###/##/' ${f}
+
+	# append the file with gfm version of html tables, via pandoc
+	# PS - extract only the table version, else it messes with headings, etc.
+	sed -n '/^<table>/,${p;/^<\/table>/q}' ${f} | pandoc --from html --to gfm >> ${f}
+
+	# remove the html table part
+	sed -i '/<div>/,/<\/div>/d' ${f}
+
+	# remove hyperlinks
+	sed -i 's/[][]\|([^()]*)//g' ${f}
+
+	# rename it with focus-area name
 	mv ${f} $(grep \#\# ${f} | cut -d - -f 2 | xargs | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g').md
 
 done
