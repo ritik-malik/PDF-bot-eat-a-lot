@@ -1,15 +1,10 @@
 ## Focus Area - Communal Value
 
 **Goal:**  
-Identify the degree to which a project is valuable to its community of users (including downstream projects) or contributors
+Identify the degree to which a project is valuable to its community of users  or contributors
 
-<div>
-<table>
-  <thead><tr><th>Metric/Details</th><th>Question</th><th>Provide Feedback</th></tr></thead>
-<tbody>
-  <tr><td><a href="https://chaoss.community/metric-project-popularity">Project Popularity</a></td><td>How popular is an open source project?</td><td></td></tr>
-  <tr><td><a href="https://chaoss.community/metric-project-velocity/">Project Velocity</a></td><td>What is the development speed for an organization?</td><td></td></tr>
-  <tr><td><a href="https://chaoss.community/metric-social-listening">Social Listening</a></td><td>How does one measure the value of community interactions and accurately gauge “trust” within a community as evident from qualitative sentiment?</td><td></td></tr>
-</tbody>
-</table>
-</div>
+| Metric/Details                                                           | Question                                                                                                                                        | Provide Feedback |
+| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| Project Popularity | How popular is an open source project?                                                                                                          |                  |
+| Project Velocity    | What is the development speed for an organization?                                                                                              |                  |
+| Social Listening     | How does one measure the value of community interactions and accurately gauge “trust” within a community as evident from qualitative sentiment? |                  |
